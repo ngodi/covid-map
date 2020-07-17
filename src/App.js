@@ -7,9 +7,12 @@ import { fetchData } from './api';
 import OverviewItem from './components/OverviewItem/OverviewItem';
 import Chart from './components/Chart/Chart';
 
+import CountrySelect from './components/CountrySelect/CountrySelect';
+
 class App extends Component{
   state = {
-    data: {}
+    data: {},
+    country: ''
   }
 
   async componentDidMount(){
@@ -18,12 +21,20 @@ class App extends Component{
       { data: result}
      )
   }
+
+  handleCountryChange = async (country) => {
+    const fetchedData = await fetchData(country);
+    this.setState({ data: fetchedData, country: country});
+  }
   render(){
-    const { data } = this.state;
+    const { data, country } = this.state;
     return (
       <div className = {style.app}>
         <OverviewItem data = {data} />
-        <Chart />
+        <div>
+          <Chart data={data} country={country}/>
+          <CountrySelect handleCountryChange={this.handleCountryChange}/>
+        </div>
       </div>
     );
   }
