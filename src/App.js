@@ -5,6 +5,7 @@ import style from './App.module.css';
 import { fetchData } from './api';
 
 import OverviewItem from './components/OverviewItem/OverviewItem';
+import Chart from './components/Chart/Chart';
 
 class App extends Component{
   state = {
@@ -22,6 +23,7 @@ class App extends Component{
     return (
       <div className = {style.app}>
         <OverviewItem data = {data} />
+        <Chart />
       </div>
     );
   }

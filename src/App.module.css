@@ -1,6 +1,10 @@
 .app{
-  width: 80vw;
+  width: 95vw;
   height: 100vh;
   margin: 0 auto;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
 }
