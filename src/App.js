@@ -1,14 +1,15 @@
-import React, {Component}  from 'react';
+import React, {Component } from 'react';
 import { fetchData } from './api';
 
 import OverviewItem from './components/OverviewItem/OverviewItem';
 import Chart from './components/Chart/Chart';
+
 import CountrySelect from './components/CountrySelect/CountrySelect';
+import styles from './App.module.css';
+
 import MapWithAMarker from './components/MyMapComponent/MyMapComponent';
 
 import Logo from './components/Logo/Logo';
-
-import styles from './App.module.css';
 
 class App extends Component{
   state = {

@@ -6,12 +6,18 @@
     font-size: 25px;
 }
 
+.infected h3 {color: blue}
+.deaths h3 {color: red}
+.recovered h3 {color: green}
+
 .container{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-
+.container span{
+    font-weight: bold;
+}
 @media only screen and (max-width: 940px) {
     .container {
       flex-direction: row;

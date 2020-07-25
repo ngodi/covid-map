@@ -6,7 +6,7 @@ const Logo = () => {
     return (
         <div className={styles.logo}>
             <img src='images/logo.png' alt="COVID MAP LOGO" width="100%"/>
-            <span className={styles.text}>Status Report</span>
+            <span className={styles.text}>World Records</span>
         </div>
     )
 }

@@ -11,17 +11,17 @@ const OverviewItem = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
          <div className={styles.container}>
            <div className={styles.infected}>
               <h3>Infected</h3>
-              <CountUp start={0} end={confirmed.value} duration={2} separator="," /><br />
+              <span><CountUp start={0} end={confirmed.value} duration={2} separator="," /></span><br />
               <time> {new Date(lastUpdate).toDateString()}</time>
            </div>
            <div className={styles.recovered}>
               <h3>Recovered</h3>
-              <CountUp start={0} end={recovered.value} duration={2} separator="," /><br />
+              <span><CountUp start={0} end={recovered.value} duration={2} separator="," /></span><br />
               <time> {new Date(lastUpdate).toDateString()}</time>
            </div>
            <div className={styles.deaths}>
               <h3>Deaths</h3>
-              <CountUp start={0} end={deaths.value} duration={2} separator="," /><br />
+              <span><CountUp start={0} end={deaths.value} duration={2} separator="," /></span><br />
               <time> {new Date(lastUpdate).toDateString()}</time>
            </div>
          </div>
