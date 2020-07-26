@@ -17,6 +17,7 @@
 ## Live Demo
 
 [Live Demo Link](admiring-beaver-9b2ce5.netlify.app)
+[Live Demo](https://battleship-js.netlify.com/)
 
 
 ## Getting Started
