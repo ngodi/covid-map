@@ -17,7 +17,7 @@
 ## Live Demo
 
 [Live Demo Link](admiring-beaver-9b2ce5.netlify.app)
-Coming soon
+
 
 ## Getting Started
 
