@@ -16,8 +16,7 @@
 
 ## Live Demo
 
-[Live Demo Link](admiring-beaver-9b2ce5.netlify.app)
-[Live Demo](admiring-beaver-9b2ce5.netlify.app)
+[COVID MAP](https://covid-mapbox.netlify.app/)
 
 
 ## Getting Started
