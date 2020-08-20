@@ -1,4 +1,4 @@
-# COVID MAP
+#covid-map
 
 > COVIDMAP is aimed at displaying the current status of the covid-19 pandemic infected, recovered and death statistics by country and globally.
 
